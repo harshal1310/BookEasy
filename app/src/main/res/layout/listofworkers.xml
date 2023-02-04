@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    cardCornerRadius="6dp"
+    android:transitionGroup="true"
+    android:id="@+id/clworkers"
+    cardElevation="6dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@drawable/electrician"
+                android:layout_gravity="start"
+                android:transitionName="trans1"
+                android:id="@+id/work_image"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/worker_name"
+                android:padding="1dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/work_image"
+                android:text="Agency Name"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/worker_number"
+                android:padding="1dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="Num:"
+                android:layout_below="@id/worker_name"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/work_image"
+                />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/msg"
+    android:layout_alignParentRight="true"
+    android:text="Msg"
+    />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/worker_city"
+            android:padding="1dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="City:"
+            android:layout_below="@id/worker_number"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/work_image"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/worker_rating"
+            android:padding="1dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+
+
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/worker_city"
+            android:layout_below="@id/worker_number"
+            android:layout_marginLeft="100dp"
+            />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

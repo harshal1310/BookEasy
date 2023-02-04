@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    cardCornerRadius="6dp"
+    android:transitionGroup="true"
+
+    cardElevation="6dp"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5">
+      <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@drawable/electrician"
+
+            android:id="@+id/user_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userreq_name"
+            android:padding="1dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/user_image"
+            android:text=" Name"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_number"
+            android:padding="1dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="no:"
+            android:layout_below="@id/userreq_name"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/user_image"
+            />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/user_number"
+    android:text="DEL"
+    android:id="@+id/done"
+    android:layout_marginLeft="100dp"
+    />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_city"
+            android:padding="1dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="City:"
+            android:layout_below="@id/user_number"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/user_image"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_address"
+            android:padding="1dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="Address:"
+
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/user_city"
+            android:layout_below="@id/user_number"
+            android:layout_marginLeft="100dp"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

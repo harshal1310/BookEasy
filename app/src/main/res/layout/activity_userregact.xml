@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:transitionGroup="true"
+    android:windowSoftInputMode="stateVisible|adjustPan"
+    tools:context=".Userregact">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgView_icon_signupuser"
+                android:layout_width="240dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="4dp"
+                android:src="@drawable/worker"
+                android:transitionName="trans1" />
+
+            <EditText
+                android:id="@+id/userTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:ems="12"
+                android:inputType="text"
+                android:hint="Name"
+                android:maxLines="1"
+                android:padding="8dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="Gender"
+                    android:textSize="18dp" />
+
+                <Spinner
+                    android:id="@+id/spinner_genderuser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:spinnerMode="dropdown"></Spinner>
+
+            </LinearLayout>
+
+
+
+
+            <EditText
+                android:id="@+id/usereTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Email Id"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/userTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/userConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="8dp" />
+
+
+            <Spinner
+                android:id="@+id/statespinnerforuser"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:entries="@array/states"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Select City"
+                android:textSize="18dp" />
+
+            <Spinner
+                android:id="@+id/cityspinnerforuser"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:scrollbarSize="20dp" />
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@android:color/transparent"
+    android:drawablePadding="12dp"
+    android:ems="10"
+    android:hint="Address"
+
+    android:maxLines="1"
+    android:padding="8dp"
+    android:id="@+id/address"
+    />
+            <EditText
+                android:id="@+id/userTextPincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="PIN Code"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="12dp"
+                    android:padding="8dp"
+                    android:text="+91-"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/userContact_No"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:hint="Contact No."
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:padding="8dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="12dp"
+                    android:padding="8dp"
+                    android:text="+91-"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/userAlternate_No"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:hint=" Alternate Contact No."
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:padding="8dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_nextforusers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#FFA726"
+
+                android:text="Signup" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

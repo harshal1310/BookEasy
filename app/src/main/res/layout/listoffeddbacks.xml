@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="8dp"
+cardCornerRadius="6dp"
+android:transitionGroup="true"
+android:id="@+id/feedbacks"
+cardElevation="6dp"
+android:background="@color/white">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:src="@drawable/electrician"
+
+        android:id="@+id/feedbackuser_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/feedbackername"
+        android:padding="1dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+
+        android:layout_toRightOf="@id/feedbackuser_image"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/comment"
+        android:padding="1dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+
+        android:layout_below="@id/feedbackuser_image"
+
+        />
+
+
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>

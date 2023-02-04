@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    cardCornerRadius="6dp"
+    android:transitionGroup="true"
+    android:id="@+id/clagency"
+    cardElevation="6dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@drawable/electrician"
+
+                android:id="@+id/agency_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/agency_name"
+                android:padding="1dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="Agency Name"
+                android:layout_toRightOf="@id/agency_image"
+                />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/agency_number"
+            android:padding="1dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text=" Num"
+            android:layout_below="@id/agency_image"
+            android:layout_toRightOf="@id/agency_image"
+            />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/registerforagency"
+                android:layout_marginLeft="50dp"
+                android:text="Reg"
+
+                android:layout_alignParentRight="true"
+                />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/view_feedback"
+            android:layout_marginLeft="50dp"
+            android:text="Feedbacks"
+
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/registerforagency"
+            />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

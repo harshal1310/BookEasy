@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.harsh1310.bookeasily">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BookEasily">
+        <activity android:name=".view_feedbacks"></activity>
+        <activity android:name=".Showprofessions" />
+        <activity android:name=".showworkers" />
+        <activity android:name=".Agency" />
+        <activity android:name=".Showrequests" />
+        <activity android:name=".Agencieslist" />
+        <activity android:name=".Agenciesact" />
+        <activity android:name=".Servicemanregact" />
+        <activity android:name=".Userregact" />
+        <activity android:name=".Show_Available_worker_profile" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".SeekerMain" />
+        <activity android:name=".AvailableWorkers" />
+        <activity android:name=".GetLocation" />
+        <activity android:name=".RecruiterMain" />
+        <activity android:name=".Signup" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Login"
+            android:exported="true"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
